@@ -1,0 +1,34 @@
+kafka01
+	paymentMq-1
+	paymentMq-4
+kafka02
+	paymentMq-2
+kafka03
+	paymentMq-0
+	paymentMq-3
+	
+
+int i = 0
+
+list{kafka01,kafka02,kafka03}
+
+for(int i=0;i<5;i++){
+   brIndex = i%broker;
+   hostName = list.get(brIndex)
+}
+
+	
+kafka01
+	paytest-2
+	paytest-5
+	paytest-8
+kafka02
+	paytest-0
+	paytest-3
+	paytest-6
+	paytest-9
+kafka03
+	paytest-1
+	paytest-4
+	paytest-7
+	paytest-10
